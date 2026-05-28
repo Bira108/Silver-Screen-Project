@@ -2,18 +2,22 @@ version: 2
 
 sources:
   - name: raw_movie_data
-    database: SILVER_SCREEN_PROJECT  # <-- Your Snowflake Database Name
-    schema: PUBLIC                  # <-- Your Snowflake Schema Name
+    database: SILVER_SCREEN_RAW
+    schema: PUBLIC
     description: "Raw data tables ingested from the Silver Screen movie theater network."
     
     tables:
-      - name: cnc_listings
-        description: "Raw cinematic listings and movie metadata details."
-      - name: theater_locations
-        description: "Physical theater venue names, capacities, and geographic regions."
-      - name: ticket_sales
-        description: "Individual transactional records for movie tickets purchased by customers."
-      - name: confectionery_sales
-        description: "Point-of-sale transactions for snacks, drinks, and popcorn combos."
-      - name: operational_costs
-        description: "Fixed and variable overhead expenses recorded per theater location."
+      - name: INVOICES
+        description: "Financial transaction records for movie ticket sales."
+
+      - name: MOVIE_CATALOGUE
+        description: "Master list of movies, genres, ratings, and cinematic listings."
+
+      - name: NJ_001
+        description: "Attendance records and individual ticket scans for New Jersey Location 1."
+
+      - name: NJ_002
+        description: "Attendance records and individual ticket scans for New Jersey Location 2."
+
+      - name: NJ_003
+        description: "Attendance records and individual ticket scans for New Jersey Location 3."
