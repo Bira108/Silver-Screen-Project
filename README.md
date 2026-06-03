@@ -58,6 +58,6 @@ Building an analytical layer directly over the production data mart exposed vita
 ---
 
 ## About Me
-I am an analytical problem-solver transitioning a deep, 25-year foundation in philosophy, systematic reasoning, and structured logic into the field of **Data Analysis and Business Intelligence**. I specialize in turning complex, messy data ecosystems into highly structured, automated, and insights-driven pipelines that solve real-world corporate challenges.
+I am a full stack analytical problem-solver transitioning a deep, 25-year foundation in philosophy, systematic reasoning, and structured logic into the field of **Data Analysis, Data Engineering and Business Intelligence**. I specialize in turning complex, messy data ecosystems into highly structured, automated, and insights-driven pipelines that solve real-world corporate challenges.
 
 📧 [Insert your Email] | 🔗 [[Insert your LinkedIn Profile Link](https://www.linkedin.com/in/ubiratan-gonzaga/)]
