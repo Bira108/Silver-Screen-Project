@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: stg_ticket_transactions
+    description: "Silver layer: Cleaned individual ticket transaction register logs."
+    columns:
+      - name: transaction_id
+        description: "The unique primary key for each register swipe."
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_daily_movie_sales
+    description: "Silver layer: Aggregated daily sales summary by movie."
+    columns:
+      - name: sales_date
+        description: "The date the sales summary was captured."
+        tests:
+          - not_null
+
+  - name: stg_concessions_sales
+    description: "Silver layer: Cleaned transaction logs for food, beverage, and merchandise."
+    columns:
+      - name: transaction_id
+        description: "The register swipe ID for the concession purchase."
+        tests:
+          - not_null
+
+  - name: stg_movies
+    description: "Silver layer: Cleaned master catalog of movies."
+    columns:
+      - name: movie_id
+        description: "The unique primary key for each movie."
+        tests:
+          - unique
+          - not_null

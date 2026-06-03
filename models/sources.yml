@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: raw_movie_data
+    database: SILVER_SCREEN_RAW
+    schema: PUBLIC
+    description: "Raw data tables ingested from the Silver Screen movie theater network."
+    
+    tables:
+      - name: INVOICES
+        description: "Financial transaction records for movie ticket sales."
+
+      - name: MOVIE_CATALOGUE
+        description: "Master list of movies, genres, ratings, and cinematic listings."
+
+      - name: NJ_001
+        description: "Attendance records and individual ticket scans for New Jersey Location 1."
+
+      - name: NJ_002
+        description: "Attendance records and individual ticket scans for New Jersey Location 2."
+
+      - name: NJ_003
+        description: "Attendance records and individual ticket scans for New Jersey Location 3."
