@@ -11,7 +11,10 @@ renamed_and_cleaned as (
         GENRE as genre,
         
         -- Explicitly format your real date column
-        cast(RELEASE_DATE as date) as released_on
+        cast(RELEASE_DATE as date) as released_on,
+
+        -- Bring in the missing runtime metric from raw data
+        cast(MINUTES as integer) as runtime_minutes
         
     from source_movie_catalogue
 )
