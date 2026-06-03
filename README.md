@@ -9,6 +9,7 @@ This project engineers a robust, production-grade cloud data pipeline that conso
 
 ## Data Architecture & Lineage
 ![Silver Screen Data Pipeline Lineage](Silver%20Screen.png)
+
 The data architecture follows a modern ELT (Extract, Load, Transform) paradigm utilizing a multi-layered design pattern within the cloud data warehouse to separate computational concerns and maximize performance.
 
 1. **Sources:** Raw ingest of disparate theater logs (`NJ_001`, `NJ_002`, `NJ_003`), the master `MOVIE_CATALOGUE`, and global studio `INVOICES`.
